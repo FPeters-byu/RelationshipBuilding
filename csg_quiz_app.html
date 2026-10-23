@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R6-02: Personal Relationship Building – Knowledge Check | CSG</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            csg: {
+              navy: '#002E5D',      // Deep Cougar Navy
+              navyDark: '#001A35',  // Dark slate navy
+              blue: '#00539F',      // Accent primary blue
+              gold: '#C59B27',      // Warm gold accent
+              goldLight: '#F3E5AB',
+              goldHover: '#B0881E',
+              slate: '#F8FAFC',
+              card: '#FFFFFF',
+              border: '#E2E8F0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      body { background-color: #ffffff; color: #000000; }
+      .no-print { display: none !important; }
+      .print-only { display: block !important; }
+      .certificate-container { border: 2px solid #002E5D !important; page-break-inside: avoid; }
+    }
+    .option-card {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .option-card:hover {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-csg-goldLight selection:text-csg-navy">
+
+  <!-- Header / Navigation Bar -->
+  <header class="bg-csg-navy text-white shadow-md border-b-4 border-csg-gold sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 py-4 sm:px-6 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center space-x-3">
+        <!-- CSG Emblem / Monogram -->
+        <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center font-display font-bold text-csg-gold text-xl tracking-wider shadow-inner">
+          CSG
+        </div>
+        <div>
+          <h1 class="font-display font-bold text-lg sm:text-xl tracking-tight leading-tight text-white">
+            Cougar Strategy Group
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-300 font-medium">Training Library • Module R6-02</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-csg-gold/20 text-csg-goldLight border border-csg-gold/30">
+          Peer-to-Peer Training
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header Block -->
+  <div class="bg-gradient-to-b from-csg-navy to-csg-navyDark text-white py-10 px-4 sm:px-6 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto relative z-10">
+      <div class="inline-block bg-white/10 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-semibold text-csg-goldLight uppercase tracking-wider mb-3 border border-white/10">
+        Asynchronous Knowledge Check
+      </div>
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-display font-extrabold text-white tracking-tight leading-tight">
+        R6-02: Personal Relationship Building
+      </h2>
+      <p class="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl font-light">
+        Connecting with Clients Beyond the Scope. Test your mastery of Peace Itimi’s TEDx principles and Mary Crossan’s Forbes article on the Trust Equation.
+      </p>
+
+      <!-- Meta stats bar -->
+      <div class="mt-6 pt-5 border-t border-white/15 flex flex-wrap items-center gap-6 text-xs text-slate-300">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-csg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>Est. 5–8 minutes</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-csg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>5 Core Questions</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-csg-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>Instant Automatic Review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 flex-grow w-full">
+
+    <!-- Consultant Info Registration Card -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 mb-8 transition-shadow hover:shadow-md">
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-8 h-8 rounded-full bg-csg-navy/10 text-csg-navy flex items-center justify-center font-bold text-sm">
+          1
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-lg text-csg-navy">Consultant Information</h3>
+          <p class="text-xs text-slate-500">Enter your details for your official completion record & sign-off certificate.</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label for="consultantName" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+            Full Name <span class="text-red-500">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="consultantName" 
+            placeholder="e.g. Jane Doe" 
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-csg-navy focus:border-transparent text-sm transition"
+            required
+          >
+        </div>
+        <div>
+          <label for="consultantId" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+            Consultant / Student ID (Optional)
+          </label>
+          <input 
+            type="text" 
+            id="consultantId" 
+            placeholder="e.g. CSG-2026-F" 
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-csg-navy focus:border-transparent text-sm transition"
+          >
+        </div>
+      </div>
+      <p id="nameError" class="text-red-600 text-xs mt-2 hidden font-medium">Please enter your name before submitting.</p>
+    </section>
+
+    <!-- Quiz Form -->
+    <form id="quizForm" onsubmit="event.preventDefault(); submitQuiz();" class="space-y-6">
+
+      <!-- Question 1 -->
+      <article class="question-block bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 transition-all" id="qBlock-1">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-csg-navy border border-slate-200">
+            Question 1 of 5
+          </span>
+          <span class="status-badge text-xs font-bold hidden"></span>
+        </div>
+        <h4 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug mb-4">
+          Why is building a personal relationship with a client important for project success?
+        </h4>
+
+        <div class="space-y-3 options-container">
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q1" value="A" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>A)</strong> It means the client will agree to pay more money without asking any questions.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q1" value="B" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>B)</strong> It creates safety and trust so problems and delays can be solved together when challenges arise.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q1" value="C" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>C)</strong> It replaces the need to analyze data or build slide decks.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q1" value="D" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>D)</strong> It helps consultants work only with their close friends.</span>
+          </label>
+        </div>
+
+        <!-- Feedback Box -->
+        <div class="feedback-box mt-4 p-4 rounded-xl text-xs sm:text-sm hidden"></div>
+      </article>
+
+      <!-- Question 2 -->
+      <article class="question-block bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 transition-all" id="qBlock-2">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-csg-navy border border-slate-200">
+            Question 2 of 5 • Forbes Article
+          </span>
+          <span class="status-badge text-xs font-bold hidden"></span>
+        </div>
+        <h4 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug mb-2">
+          In the Forbes article by Mary Crossan, trust is defined with the equation:
+        </h4>
+        <div class="inline-block bg-slate-100 px-3 py-1.5 rounded-lg font-mono text-xs text-csg-navy font-bold mb-4 border border-slate-200">
+          Trust = Character × Competence × Commitment
+        </div>
+        <p class="font-display font-semibold text-slate-800 text-sm mb-4">
+          Why does the author argue that high competence (technical skill) alone is never enough to create trust?
+        </p>
+
+        <div class="space-y-3 options-container">
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q2" value="A" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>A)</strong> Because clients only care about the brand name of the consulting group.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q2" value="B" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>B)</strong> Because competence is too expensive for most businesses to buy.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q2" value="C" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>C)</strong> Because the formula multiplies: if Character (like empathy and humility) is missing, high competence only amplifies poor judgment and ruins trust.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q2" value="D" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>D)</strong> Because technical tools and slides are completely useless in business.</span>
+          </label>
+        </div>
+
+        <div class="feedback-box mt-4 p-4 rounded-xl text-xs sm:text-sm hidden"></div>
+      </article>
+
+      <!-- Question 3 -->
+      <article class="question-block bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 transition-all" id="qBlock-3">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-csg-navy border border-slate-200">
+            Question 3 of 5 • TEDx Talk
+          </span>
+          <span class="status-badge text-xs font-bold hidden"></span>
+        </div>
+        <h4 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug mb-4">
+          In her TEDx talk, Peace Itimi explains the "HUG" rule for connecting with people. What does the "H" stand for?
+        </h4>
+
+        <div class="space-y-3 options-container">
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q3" value="A" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>A)</strong> Hurry up (talk as fast as you can to save meeting time)</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q3" value="B" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>B)</strong> Hide your mistakes (never admit when a number is wrong)</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q3" value="C" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>C)</strong> Hear them (listen carefully instead of just waiting for your turn to speak)</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q3" value="D" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>D)</strong> Help with money (give the client a lower price)</span>
+          </label>
+        </div>
+
+        <div class="feedback-box mt-4 p-4 rounded-xl text-xs sm:text-sm hidden"></div>
+      </article>
+
+      <!-- Question 4 -->
+      <article class="question-block bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 transition-all" id="qBlock-4">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-csg-navy border border-slate-200">
+            Question 4 of 5 • Client Interaction
+          </span>
+          <span class="status-badge text-xs font-bold hidden"></span>
+        </div>
+        <h4 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug mb-4">
+          At the start of a check-in call, your client says: <em class="text-csg-navy font-normal italic">"Sorry I'm a bit stressed today; our team is dealing with a messy office move."</em> What is the best response?
+        </h4>
+
+        <div class="space-y-3 options-container">
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q4" value="A" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>A)</strong> Ignore the comment and immediately share your screen to show Slide 1.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q4" value="B" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>B)</strong> Show genuine care, ask a short kind question, and then move smoothly to the agenda.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q4" value="C" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>C)</strong> Talk for 15 minutes about your own apartment moves.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q4" value="D" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>D)</strong> Cancel the meeting right away.</span>
+          </label>
+        </div>
+
+        <div class="feedback-box mt-4 p-4 rounded-xl text-xs sm:text-sm hidden"></div>
+      </article>
+
+      <!-- Question 5 -->
+      <article class="question-block bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-7 transition-all" id="qBlock-5">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-csg-navy border border-slate-200">
+            Question 5 of 5 • Meeting Habits
+          </span>
+          <span class="status-badge text-xs font-bold hidden"></span>
+        </div>
+        <h4 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug mb-4">
+          What is the best way to open a weekly client meeting?
+        </h4>
+
+        <div class="space-y-3 options-container">
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q5" value="A" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>A)</strong> Jump straight into complex spreadsheet rows in the first 10 seconds.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q5" value="B" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>B)</strong> Spend the first 2 to 3 minutes on a friendly check-in before presenting project work.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q5" value="C" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>C)</strong> Spend the entire meeting talking about sports or hobbies.</span>
+          </label>
+          <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm">
+            <input type="radio" name="q5" value="D" class="mt-0.5 text-csg-navy focus:ring-csg-navy">
+            <span class="text-slate-700 font-medium"><strong>D)</strong> Wait in complete silence until the client asks to see your work.</span>
+          </label>
+        </div>
+
+        <div class="feedback-box mt-4 p-4 rounded-xl text-xs sm:text-sm hidden"></div>
+      </article>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 no-print">
+        <p id="unansweredWarning" class="text-amber-700 text-xs font-semibold hidden">
+          ⚠️ Please answer all 5 questions before submitting.
+        </p>
+        <div class="flex items-center gap-3 w-full sm:w-auto ml-auto">
+          <button 
+            type="button" 
+            id="resetBtn" 
+            onclick="resetQuiz()" 
+            class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-200 text-sm font-semibold transition"
+          >
+            Reset Answers
+          </button>
+          <button 
+            type="submit" 
+            id="submitBtn" 
+            class="w-full sm:w-auto px-7 py-2.5 rounded-xl bg-csg-navy text-white hover:bg-csg-blue font-semibold text-sm shadow-md hover:shadow-lg transition flex items-center justify-center gap-2"
+          >
+            <span>Submit for Grading</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Score & Completion Certificate Card (Displayed after submission) -->
+    <div id="resultsCard" class="hidden mt-8 space-y-6">
+
+      <!-- Score Summary Banner -->
+      <div class="bg-gradient-to-r from-csg-navy to-csg-navyDark text-white rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-6 border-l-8 border-csg-gold">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-csg-gold font-bold">Assessment Complete</span>
+          <h3 class="text-2xl sm:text-3xl font-display font-extrabold mt-1" id="scoreTitle">Results</h3>
+          <p class="text-slate-300 text-sm mt-1" id="scoreSubtext">Review your detailed breakdown and feedback below.</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-center bg-white/10 px-6 py-3 rounded-xl border border-white/15">
+            <div class="text-3xl sm:text-4xl font-extrabold font-display text-csg-goldLight" id="scoreValue">5/5</div>
+            <div class="text-xs text-slate-300 uppercase tracking-wider font-semibold" id="scorePercent">100%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formal Completion Sign-Off Certificate -->
+      <div id="certificate" class="certificate-container bg-white border-2 border-csg-navy rounded-2xl p-6 sm:p-8 shadow-sm relative overflow-hidden">
+        <!-- Watermark / Background stamp -->
+        <div class="absolute -right-6 -bottom-6 text-slate-100 font-display font-black text-8xl pointer-events-none select-none opacity-40">
+          CSG
+        </div>
+
+        <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-csg-navy text-csg-gold font-bold flex items-center justify-center text-sm">
+              CSG
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-csg-navy text-sm uppercase tracking-wider">Cougar Strategy Group</h4>
+              <p class="text-xs text-slate-500">Training Record & Competency Verification</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">
+            ✓ Verified Sign-Off
+          </span>
+        </div>
+
+        <div class="space-y-3 text-sm">
+          <p class="text-slate-600">
+            This certifies that <strong class="text-slate-900 font-bold" id="certName">[Consultant Name]</strong> 
+            <span id="certIdSpan" class="text-slate-600"></span> has completed the asynchronous learning unit:
+          </p>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 my-2">
+            <div class="text-xs text-slate-500 font-semibold uppercase">Official Module Code & Nomenclature</div>
+            <div class="font-mono text-sm font-bold text-csg-navy mt-0.5" id="certModuleCode">
+              R6-02_Personal_Relationship_Building_Fall_2026
+            </div>
+            <div class="text-xs text-slate-600 mt-1">
+              Curriculum Core: <em>Trust Equation (Crossan) & HUG Principle (Itimi)</em>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs pt-2">
+            <div>
+              <span class="text-slate-400 block font-semibold uppercase">Completion Date</span>
+              <span class="text-slate-800 font-medium" id="certTimestamp"></span>
+            </div>
+            <div>
+              <span class="text-slate-400 block font-semibold uppercase">Performance Score</span>
+              <span class="text-slate-800 font-medium" id="certScore"></span>
+            </div>
+            <div>
+              <span class="text-slate-400 block font-semibold uppercase">Status</span>
+              <span class="text-emerald-700 font-bold">Passed & Approved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Action Bar -->
+        <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 no-print">
+          <div class="text-xs text-slate-500 italic">
+            Save this confirmation for your CSG Teams training portfolio.
+          </div>
+          <div class="flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="copySignOffText()" 
+              id="copyRecordBtn"
+              class="px-4 py-2 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold transition flex items-center gap-1.5"
+            >
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span>Copy Record</span>
+            </button>
+            <button 
+              type="button" 
+              onclick="window.print()" 
+              class="px-4 py-2 rounded-lg bg-csg-navy text-white hover:bg-csg-blue text-xs font-semibold shadow-sm transition flex items-center gap-1.5"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+              <span>Print / Save PDF</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Notification Toast for Copying -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-xl text-xs font-semibold flex items-center gap-2 transform translate-y-16 opacity-0 transition-all duration-300 z-50">
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    <span>Sign-off record copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-slate-500 text-xs text-center no-print">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="font-medium text-slate-600">Cougar Strategy Group (CSG) • Consulting Training Library</p>
+      <p class="mt-1 text-slate-400">Self-Contained Asynchronous Module • No external university authentication required.</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    // Quiz Master Data
+    const quizData = {
+      q1: {
+        correct: 'B',
+        feedback: "Correct! Personal rapport establishes emotional safety. When unexpected project roadblocks happen, a high-trust relationship allows you to solve problems cooperatively instead of facing resistance."
+      },
+      q2: {
+        correct: 'C',
+        feedback: "Correct! Competence is only 'table stakes.' Because the components multiply each other, a score of zero in Character makes total Trust zero. High technical capability without character only accelerates poor decisions."
+      },
+      q3: {
+        correct: 'C',
+        feedback: "Correct! 'Hear them' means practicing active listening. Consultants must focus genuinely on what the other person is sharing rather than mentally preparing their next point."
+      },
+      q4: {
+        correct: 'B',
+        feedback: "Correct! Taking 30 to 60 seconds to validate their situation shows humanity and builds rapport, after which you can transition effectively into the meeting agenda."
+      },
+      q5: {
+        correct: 'B',
+        feedback: "Correct! Dedicating the first 2–3 minutes to casual conversation breaks the ice, establishes psychological safety, and makes technical collaboration much more productive."
+      }
+    };
+
+    function submitQuiz() {
+      const nameInput = document.getElementById('consultantName');
+      const nameError = document.getElementById('nameError');
+      const unansweredWarning = document.getElementById('unansweredWarning');
+      
+      const consultantName = nameInput.value.trim();
+      if (!consultantName) {
+        nameError.classList.remove('hidden');
+        nameInput.focus();
+        return;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      // Check all 5 questions
+      let score = 0;
+      let allAnswered = true;
+      const userAnswers = {};
+
+      for (let i = 1; i <= 5; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (!selected) {
+          allAnswered = false;
+        } else {
+          userAnswers[`q${i}`] = selected.value;
+        }
+      }
+
+      if (!allAnswered) {
+        unansweredWarning.classList.remove('hidden');
+        return;
+      } else {
+        unansweredWarning.classList.add('hidden');
+      }
+
+      // Grade Questions and apply visual cues
+      for (let i = 1; i <= 5; i++) {
+        const qKey = `q${i}`;
+        const correctVal = quizData[qKey].correct;
+        const userVal = userAnswers[qKey];
+        const block = document.getElementById(`qBlock-${i}`);
+        const statusBadge = block.querySelector('.status-badge');
+        const feedbackBox = block.querySelector('.feedback-box');
+        const optionCards = block.querySelectorAll('.option-card');
+
+        const isCorrect = (userVal === correctVal);
+        if (isCorrect) score++;
+
+        // Status Badge
+        statusBadge.classList.remove('hidden');
+        if (isCorrect) {
+          statusBadge.innerHTML = `<span class="text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full border border-emerald-300">✓ Correct</span>`;
+          block.classList.add('border-emerald-300', 'bg-emerald-50/20');
+        } else {
+          statusBadge.innerHTML = `<span class="text-rose-700 bg-rose-100 px-2.5 py-1 rounded-full border border-rose-300">✗ Incorrect (Your answer: ${userVal})</span>`;
+          block.classList.add('border-rose-300', 'bg-rose-50/20');
+        }
+
+        // Highlight options
+        optionCards.forEach(card => {
+          const input = card.querySelector('input');
+          card.classList.remove('hover:bg-slate-50', 'hover:border-csg-blue/50');
+          if (input.value === correctVal) {
+            card.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-900', 'font-semibold');
+          } else if (input.value === userVal && !isCorrect) {
+            card.classList.add('bg-rose-50', 'border-rose-400', 'text-rose-900', 'line-through');
+          } else {
+            card.classList.add('opacity-50');
+          }
+          input.disabled = true;
+        });
+
+        // Feedback content
+        feedbackBox.classList.remove('hidden');
+        feedbackBox.innerHTML = `
+          <div class="flex items-start gap-2 ${isCorrect ? 'text-emerald-800 bg-emerald-100/70 border border-emerald-200' : 'text-slate-800 bg-amber-50 border border-amber-200'} p-3 rounded-xl">
+            <span class="text-base">${isCorrect ? '💡' : '📌'}</span>
+            <div>
+              <strong class="font-bold block mb-0.5">${isCorrect ? 'Concept Applied:' : 'Correct Answer: Option ' + correctVal}</strong>
+              <span>${quizData[qKey].feedback}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      // Display Results Card
+      const resultsCard = document.getElementById('resultsCard');
+      const scoreValue = document.getElementById('scoreValue');
+      const scorePercent = document.getElementById('scorePercent');
+      const scoreTitle = document.getElementById('scoreTitle');
+      const scoreSubtext = document.getElementById('scoreSubtext');
+
+      scoreValue.textContent = `${score}/5`;
+      const percentage = Math.round((score / 5) * 100);
+      scorePercent.textContent = `${percentage}%`;
+
+      if (score === 5) {
+        scoreTitle.textContent = "Outstanding Mastery!";
+        scoreSubtext.textContent = "You demonstrated a full understanding of client relationship dynamics and the trust equation.";
+      } else if (score >= 4) {
+        scoreTitle.textContent = "Well Done!";
+        scoreSubtext.textContent = "You have met the required standard for module R6-02.";
+      } else {
+        scoreTitle.textContent = "Review Recommended";
+        scoreSubtext.textContent = "Please review the explanations above and revisit the readings before retaking.";
+      }
+
+      // Update Certificate Info
+      document.getElementById('certName').textContent = consultantName;
+      const consultantId = document.getElementById('consultantId').value.trim();
+      const certIdSpan = document.getElementById('certIdSpan');
+      if (consultantId) {
+        certIdSpan.textContent = `(ID: ${consultantId})`;
+      } else {
+        certIdSpan.textContent = '';
+      }
+
+      const now = new Date();
+      const formattedDate = now.toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'short', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      document.getElementById('certTimestamp').textContent = formattedDate;
+      document.getElementById('certScore').textContent = `${score} of 5 (${percentage}%)`;
+
+      resultsCard.classList.remove('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      
+      // Smooth scroll to results
+      resultsCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function resetQuiz() {
+      document.getElementById('quizForm').reset();
+      document.getElementById('nameError').classList.add('hidden');
+      document.getElementById('unansweredWarning').classList.add('hidden');
+      document.getElementById('resultsCard').classList.add('hidden');
+      document.getElementById('submitBtn').classList.remove('hidden');
+
+      for (let i = 1; i <= 5; i++) {
+        const block = document.getElementById(`qBlock-${i}`);
+        block.classList.remove('border-emerald-300', 'bg-emerald-50/20', 'border-rose-300', 'bg-rose-50/20');
+        const statusBadge = block.querySelector('.status-badge');
+        statusBadge.classList.add('hidden');
+        statusBadge.innerHTML = '';
+        const feedbackBox = block.querySelector('.feedback-box');
+        feedbackBox.classList.add('hidden');
+        feedbackBox.innerHTML = '';
+
+        const optionCards = block.querySelectorAll('.option-card');
+        optionCards.forEach(card => {
+          card.className = "option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-csg-blue/50 hover:bg-slate-50 cursor-pointer text-sm";
+          const input = card.querySelector('input');
+          input.disabled = false;
+        });
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function copySignOffText() {
+      const name = document.getElementById('certName').textContent;
+      const id = document.getElementById('consultantId').value.trim();
+      const score = document.getElementById('certScore').textContent;
+      const date = document.getElementById('certTimestamp').textContent;
+
+      const recordText = `CSG MODULE COMPLETION RECORD\n--------------------------------\nModule: R6-02_Personal_Relationship_Building_Fall_2026\nConsultant: ${name}${id ? ` (ID: ${id})` : ''}\nScore: ${score}\nDate: ${date}\nVerification: Cougar Strategy Group Training Library`;
+
+      // Fallback-safe clipboard copy
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = recordText;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      try {
+        document.execCommand('copy');
+        showToast();
+      } catch (err) {
+        console.error('Could not copy', err);
+      }
+      document.body.removeChild(tempTextArea);
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.remove('translate-y-16', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-16', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
